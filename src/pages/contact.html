@@ -1,0 +1,58 @@
+{% extends "layout-2.html" %}
+
+{% block content%}
+  {% import "macros/navbar-macro.html" as nav %}
+  {{nav.active('contact')}}
+
+  <header class="page-header">
+    <div class="row">
+      <div class="columns">
+        <h2 class="page-heading">
+          We’d love to hear from you
+        </h2>
+        <p class="lead">
+          Our offices are in the vibrant one-north district. We host meetings and hold sessions here (for individuals and small groups), or we can come to you.
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <div class="image-break contact-image"></div>
+
+  <section class="section contact-info">
+    <div class="row align-center">
+      <div class="columns">
+        <h3>
+          Call us or drop us a line
+        </h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-12 medium-4">
+        <p>
+          <span><i class="fa fa-phone fw"></i>+65 9159 0366</span>
+          <br>
+          <span><i class="fa fa-phone fw"></i>+65 9159 0350</span>
+          <br>
+          <span><i class="fa fa-send fw"></i>info@intangible.asia</span>
+        </p>
+      </div>
+      <div class="small-12 medium-6">
+        <p>
+          Intangible Communications Pte Ltd
+          <br>
+          Blk 79 Ayer Rajah Crescent.
+          <br>
+          #04-04 Singapore 139955
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="googleMap">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.794509433915!2d103.78528081432596!3d1.2980165621024156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1a4fe45692e5%3A0xc90d9ee9e29fd8c2!2s79+Ayer+Rajah+Crescent%2C+Block+79%2C+Singapore+139955!5e0!3m2!1sen!2sjp!4v1450096035853"  frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+
+
+  {% include "partials/footer.html" %}
+{% endblock %}

@@ -1,0 +1,121 @@
+%nav-items
+  display: inline-block
+  list-style: none
+  vertical-align: middle
+  text-transform: uppercase
+  &:last-of-type
+    margin-right: 0
+
+.logo-white
+  +text-replace("logo-white.png", 95px, 50px)
+  display: inline-block
+
+.logo-red
+  +text-replace("logo-red.png", 95px, 50px)
+  display: inline-block
+
+.navbar
+  display: flex
+  align-items: center
+  width: 100%
+  padding: 2rem 5%
+  color: rgba(153, 153, 153, 0.7)
+
+  &-brand
+    margin-top: 0
+    margin-bottom: 0
+    margin-right: auto
+
+  &-links
+    display: none
+    +breakpoint(medium)
+      display: inline-block
+    margin: 0
+    padding: 0
+    li
+      @extend %nav-items
+      font-size: 0.8rem
+      font-weight: 600
+      margin-right: rem-calc(30px)
+      margin-bottom: 0
+
+      a
+        vertical-align: middle
+        padding-left: 0
+        padding-right: 0
+        border-bottom: solid 2px transparent
+
+    .button
+      padding: 5px 10px
+
+    .active
+      color: $--primary
+      border-color: $--primary
+
+    .is-submenu-item
+      border-bottom: solid 1px transparentize(#fff, 0.8)
+      text-align: center
+      text-transform: uppercase
+      padding: 1rem 1rem
+      &:last-of-type
+        border: none
+
+#nav-toggle
+  +breakpoint(medium)
+    display: none
+  margin: 0
+  padding: 0
+  position: relative
+  width: 40px
+  height: 40px
+  background-color: transparent
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after
+  cursor: pointer
+  border-radius: 1px
+  height: 3px
+  width: 35px
+  background: #333
+  position: absolute
+  display: block
+  content: ''
+  left: 0
+
+#nav-toggle span:before
+  top: -10px
+
+#nav-toggle span:after
+  bottom: -10px
+
+.navbar-home
+  position: absolute
+  top: 0
+  left: 0
+  padding-top: rem-calc(46)
+  color: #fff
+
+  .button-outline
+    color: #fff
+    border-color: #fff
+    &:hover
+      background-color: #fff
+      color: #333
+
+
+.menu > li:not(.menu-text) > a
+  padding: 0
+
+
+
+.offcanvas-nav
+  text-align: center
+  padding-top: 2rem
+  padding-bottom: 3rem
+
+  .menu > li
+    margin-bottom: 2rem
+    margin-top: 2rem
+
+  .button
+    margin: 0 !important
+    display: inline-block !important

@@ -1,0 +1,83 @@
+.wwd-image
+  +bg-image('bg_what-we-do.jpg')
+  background-size: cover
+
+.wwd-grey
+  +breakpoint(medium)
+    background-color: #f7f7f7
+    text-align: center
+    display: flex
+    align-items: center
+    justify-content: center
+  +breakpoint(large)
+    padding: rem-calc(50px)
+
+.wwd-text
+  +breakpoint(medium)
+    padding: rem-calc(50px)
+  +breakpoint(large)
+    padding: rem-calc(100px)
+
+.case
+  color: $--body-text-color
+
+.vae-image
+  +bg-image('bg_video-and-events.jpg')
+  background-size: cover
+
+.wwr-1-image
+  +bg-image('bg_who-we-are-1.jpg')
+  background-size: cover
+
+.wwr-2-image
+  +bg-image('bg_who-we-are-2.jpg')
+  background-size: cover
+
+.contact-image
+  +bg-image('bg_contact.jpg')
+  background-size: cover
+
+.wos-image
+  +bg-image('bg_word-of-mouth.jpg')
+  background-size: cover
+
+.contact-info
+  .fa
+    display: inline-block
+    margin-right: 1rem
+    color: $--primary
+    // margin-left: 15px
+  p
+    line-height: 1.8
+    margin-left: 15px
+  span
+    display: inline-block
+
+.wos-press-images
+  list-style: none
+  margin: 0
+  padding: 0
+
+  li
+    display: inline-block
+    margin: 4%
+    +breakpoint(medium)
+      width: 30%
+      margin: 1%
+
+    +breakpoint(large)
+      width: 21%
+      margin: 1.5%
+
+.googleMap
+        position: relative
+        height: 400px
+        overflow: hidden
+
+.googleMap iframe
+    position: absolute
+    top: 0
+    left: 0
+    width: 100% !important
+    height: 100% !important
+    pointer-events: none

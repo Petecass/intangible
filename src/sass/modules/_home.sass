@@ -1,0 +1,84 @@
+.home-section
+  padding: rem-calc(80) 0
+
+.home-section-title
+  text-align: center
+  margin-bottom: 3rem
+
+.home-intro
+  margin-bottom: rem-calc(100)
+  &:last-of-type
+    margin-bottom: 0
+  img
+    max-width: 75px
+    margin-bottom: 1rem
+
+.home-about
+  background-color: #F5F5F5
+  h3
+    margin-bottom: 3rem
+  img
+    max-width: 110px
+    margin-bottom: 1rem
+
+  .lead
+    color: #999999
+
+.home-cta
+  color: #fff
+  text-align: center
+  background: linear-gradient(0deg, #52090a 0%, #871c1d 100%)
+  &-title
+    margin-bottom: 2.5rem
+    color: inherit
+  .row
+    max-width: 35rem
+
+  p
+    +margin-center
+    max-width: 25rem
+    margin-bottom: 2.5rem
+
+.testimonial-slide
+  padding: 0 3rem
+
+.testimonial-body
+  text-align: center
+  padding: 4rem
+  background-color: #f7f7f7
+  position: relative
+
+%testimonial-quote-marks
+  font-size: 3rem
+  color: $--primary
+  text-align: center
+  width: 100%
+  position: absolute
+  left: 0
+  margin-bottom: 0
+  line-height: 0
+
+.testimonial-quote-marks
+  @extend %testimonial-quote-marks
+  top: 3rem
+
+.testimonial-quote-marks--bottom
+  @extend %testimonial-quote-marks
+  bottom: 3rem
+
+.testimonial-meta
+  color: $--primary
+  padding: 3rem 0
+
+.testimonial-company
+  max-height: 30px
+
+.testimonial-profile-pic
+  width: 60px
+  display: inline-block
+  margin-left: auto
+  margin-right: auto
+
+.fb-like
+  +breakpoint(medium)
+    margin-left: 15px !important

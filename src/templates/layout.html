@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+
+    <!-- build:css css/app.min.css -->
+      <link rel="stylesheet" href="css/app.css">
+    <!-- endbuild -->
+
+  </head>
+  <body>
+
+    <div class="off-canvas-wrapper">
+      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+        <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+          <nav class="off-canvas-nav">
+            <h1 class="off-canvas-nav-brand logo-main">Melewi</h1>
+            <ul class="off-canvas-nav-links">
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+            </ul>
+          </nav>
+        </div><!-- end off-canvas -->
+        <div class="off-canvas-content" data-off-canvas-content>
+
+          <header class="header text-center">
+            <nav class="navbar">
+              <h1 class="navbar-brand logo-main">Brand</h1>
+              <ul class="navbar-links show-for-large">
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+              </ul>
+              <button class="hide-for-large" id="nav-toggle" type="button" data-open="offCanvas"><span></span></button>
+            </nav>
+
+          </header>
+
+          {% block content %} {% endblock %}
+
+          <footer class="footer">
+
+          </footer>
+
+        </div><!-- end off-canvas-content -->
+      </div><!-- end off-canvas-wrapper-inner -->
+    </div><!-- end off-canvas-wrapper -->
+
+
+    <!-- build:js js/app.min.js -->
+      <!-- inject:js -->
+      <!-- endinject -->
+    <!-- endbuild -->
+
+  </body>
+</html>

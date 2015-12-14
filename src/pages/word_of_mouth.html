@@ -1,0 +1,39 @@
+{% extends "layout-2.html" %}
+
+{% block content%}
+  {% import "macros/navbar-macro.html" as nav %}
+  {{nav.active('word_of_mouth')}}
+
+  <header class="page-header">
+    <div class="row">
+      <div class="columns">
+        <h2 class="page-heading">
+          You’ve heard from us - now hear what others have to say
+        </h2>
+      </div>
+    </div>
+  </header>
+
+  <div class="image-break wos-image"></div>
+
+  <section class="section contact-info">
+    <div class="row align-center">
+      <div class="columns">
+        <ul class="wos-press-images" id="pressGallery">
+          <li><a href="./images/press-1.png"><img src="./images/press-1.png" alt="" /></a></li>
+          <li><a href="./images/press-1.png"><img src="./images/press-1.png" alt="" /></a></li>
+          <li><a href="./images/press-1.png"><img src="./images/press-1.png" alt="" /></a></li>
+          <li><a href="./images/press-1.png"><img src="./images/press-1.png" alt="" /></a></li>
+          <li><a href="./images/press-1.png"><img src="./images/press-1.png" alt="" /></a></li>
+          <li><a href="./images/press-1.png"><img src="./images/press-1.png" alt="" /></a></li>
+          <li><a href="./images/press-1.png"><img src="./images/press-1.png" alt="" /></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  {% include "partials/footer.html" %}
+{% endblock %}

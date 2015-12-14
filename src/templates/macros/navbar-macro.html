@@ -1,0 +1,20 @@
+{% macro active(activePage='home') %}
+  <!-- Macro stuff here -->
+  <nav class="navbar {%if activePage == 'home' %} navbar-home {% endif %}" >
+    <h1 class="navbar-brand {%if activePage == 'home' %} logo-white {% else %} logo-red {% endif %}"></h1>
+    <ul class="navbar-links dropdown menu " data-dropdown-menu>
+      <li><a href="/index.html">Home</a></li>
+      <li class="{%if activePage == 'what_we_do' %} active {% endif %}"><a href="#">What we do</a>
+        <ul class="menu">
+          <li><a href="/presentations.html">Presentations</a></li>
+          <li><a href="/video_events.html">Video Events</a></li>
+
+        </ul>
+      </li>
+      <li ><a class="{%if activePage == 'word_of_mouth' %} active {% endif %}" href="/word_of_mouth.html">Word of mouth</a></li>
+      <li class="{%if activePage == 'who_we_are' %} active {% endif %}"><a href="/who_we_are.html">Who we are</a></li>
+      <li class="button button-outline {%if activePage == 'contact' %} active {% endif %}"><a href="/contact.html">Get in touch</a></li>
+    </ul>
+    <button type="button" class="button" data-toggle="offCanvas" id="nav-toggle"><span></span></button>
+  </nav>
+{% endmacro %}

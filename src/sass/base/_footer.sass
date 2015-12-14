@@ -1,0 +1,35 @@
+.footer
+  text-align: center
+  +breakpoint(medium)
+    text-align: left
+  padding: rem-calc(75) 0
+  background: $footer-bg
+  color: $footer-color
+
+  &-title
+    color: #fff
+
+  &-copy
+    font-size: 0.8rem
+    margin-bottom: rem-calc(26)
+
+  &-facebook
+    display: inline-block
+    font-size: 0.8rem
+
+  &-social
+    display: inline-block
+    margin-top: 1rem
+    margin-left: 0
+    +breakpoint(large)
+      margin-top: 0
+
+.footer-navigation
+  margin: 0
+  padding: 0
+  margin-bottom: rem-calc(50)
+  li
+    margin-right: 1rem
+    @extend %nav-items
+    font-size: 0.9rem
+    
