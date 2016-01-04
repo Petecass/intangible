@@ -58,7 +58,6 @@ $(document).ready(function(){
   });
 
   $('.googleMap').click(function () {
-    console.log('googlemaps');
     $('.googleMap iframe').css("pointer-events", "auto");
   });
 

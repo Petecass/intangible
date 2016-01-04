@@ -17,7 +17,8 @@ gulp.task('build', function(cb){
           'clean-build',
           // 'move-components',
           'inject',
-          ['html', 'optimImages', 'moveFonts-dest'],
+          'optimImages',
+          ['html', 'moveFonts-dest'],
           cb);
 
 });
