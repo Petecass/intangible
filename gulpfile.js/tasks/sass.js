@@ -15,6 +15,7 @@ var        gulp = require('gulp'),
          runSequence = require('run-sequence'),
             iff = require('gulp-if'),
  nunjucksRender = require('gulp-nunjucks-render'),
+           data = require('gulp-data'),
          rename = require('gulp-rename'),
               $ = require('../gulpconfig').sass;
 
@@ -43,7 +44,11 @@ gulp.task('compileSass', function(){
 gulp.task('nunjucks', function(){
   nunjucksRender.nunjucks.configure(['src/templates/'], {watch: false});
   return gulp.src('src/pages/**/*.html')
+  .pipe(data(function() {
+   return require('../../src/data.json');
+  }))
   .pipe(nunjucksRender())
+
   // .pipe(rename('*.html'))
   .pipe(gulp.dest('build'));
 

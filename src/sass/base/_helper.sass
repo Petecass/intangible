@@ -7,6 +7,13 @@ img
 .page-header
   margin: rem-calc(100px) 0
 
+.page-header-text
+  max-width: 900px
+
+.page-heading
+  font-size: 2rem
+
+
 .image-break
   height: rem-calc(425px)
 
@@ -40,11 +47,14 @@ img
 .button-outline
   background-color: transparent
   border: solid 2px rgba(153, 153, 153, 0.7)
+  background-clip: padding-box
   color: rgba(153, 153, 153, 0.7)
   padding: 1rem 1.5rem !important
   &:hover
-    background-color: rgba(153, 153, 153, 0.7)
-    color: #fff
+    background-color: #eee
+    border-color: #eee
+    color: #999
+
 
 .button-white
   background-color: #fff
@@ -54,7 +64,7 @@ img
     color: $--primary
 
 .client-list
-  background-color: $bg-grey
+  background-color: #fff
   .heading
     padding-top: 0
   &-images
@@ -76,6 +86,8 @@ img
       +breakpoint(medium)
         max-width: 40%
 
+.client-list--grey
+  background-color: $bg-grey
 
 body
   height: 100%

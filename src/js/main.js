@@ -23,7 +23,7 @@ $(document).ready(function(){
     // asNavFor: '.slider-for',
     dots: true,
     focusOnSelect: true,
-    autoplay: true,
+    autoplay: false,
     responsive: [
       {
         breakpoint: 768,
@@ -35,27 +35,27 @@ $(document).ready(function(){
 
   });
 
-  var $overlay = $('<div id="overlay"></div>');
-  var $img = $('<img>');
-
-  $overlay.append($img);
-
-  $('.off-canvas-content').append($overlay);
-
-  $('#pressGallery li a').click(function(e){
-    e.preventDefault();
-    var href = $(this).attr('href');
-    var pos = $(this).offset().top;
-    // console.log(pos);
-    $img.attr('src', href);
-    $overlay.show();
-
-  });
-
-  $('#overlay').click(function(){
-    $overlay.hide();
-
-  });
+  // var $overlay = $('<div id="overlay"></div>');
+  // var $img = $('<img>');
+  //
+  // $overlay.append($img);
+  //
+  // $('.off-canvas-content').append($overlay);
+  //
+  // $('#pressGallery li a').click(function(e){
+  //   e.preventDefault();
+  //   var href = $(this).attr('href');
+  //   var pos = $(this).offset().top;
+  //   // console.log(pos);
+  //   $img.attr('src', href);
+  //   $overlay.show();
+  //
+  // });
+  //
+  // $('#overlay').click(function(){
+  //   $overlay.hide();
+  //
+  // });
 
   $('.googleMap').click(function () {
     $('.googleMap iframe').css("pointer-events", "auto");

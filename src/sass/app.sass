@@ -7,7 +7,7 @@
 // // Import Motion-UI from vendor files
 // @import "../../vendor/motion-ui/src/motion-ui"
 // @include motion-ui-transitions
-// @include motion-ui-animations
+// @include motion-ui-animation
 
 // Select the components you want to use
 @include foundation-global-styles
@@ -51,13 +51,16 @@
 
 
 $slick-dot-color: $--primary !default
-$slick-dot-size: 60px !default
+$slick-dot-size: 12px !default
 $slick-opacity-default: 1 !default
 
 
 
 @import "../../bower_components/slick-carousel/slick/slick.scss"
+
+$slick-font-path: "../fonts/" !default
 @import "../../bower_components/slick-carousel/slick/slick-theme.scss"
+@import "../../bower_components/font-awesome/css/font-awesome.css"
 
 @import "base/index"
 @import "modules/index"

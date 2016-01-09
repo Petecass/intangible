@@ -2,9 +2,23 @@
   +bg-image('bg_what-we-do.jpg')
   background-size: cover
 
+.wwd-container
+  border-bottom: solid 2px $bg-grey
+
+
+.wwd-container--left
+  @extend .wwd-container
+  +breakpoint(medium)
+    background-image: linear-gradient(to right,$bg-grey ,$bg-grey 30% ,#fff 30%, #fff)
+
+.wwd-container--right
+  @extend .wwd-container
+  +breakpoint(medium)
+    background-image: linear-gradient(to left,$bg-grey ,$bg-grey 30% ,#fff 30%, #fff)
+
 .wwd-grey
   +breakpoint(medium)
-    background-color: #f7f7f7
+    background-color: $bg-grey
     text-align: center
     display: flex
     align-items: center
@@ -15,8 +29,15 @@
 .wwd-text
   +breakpoint(medium)
     padding: rem-calc(50px)
+    display: flex
+    align-items: center
+    justify-content: center
   +breakpoint(large)
     padding: rem-calc(100px)
+
+.wwd-icon
+  max-width: 75px
+  margin-bottom: 1rem
 
 .case
   color: $--body-text-color
@@ -42,6 +63,8 @@
   background-size: cover
 
 .contact-info
+  +breakpoint(medium)
+    padding-left: 6rem
   .fa
     display: inline-block
     margin-right: 1rem

@@ -7,8 +7,8 @@
   <header class="home-header text-center">
     <div class="row">
       <div class="columns">
-        <h1 class="home-header-title">Good Communicators make great leaders</h1>
-        <p>
+        <h1 class="home-header-title">Good communicators make great leaders</h1>
+        <p class="home-header-caption">
           They tell stories  and really connect with us. Their style appears effortless, unattainable. But it can be learned and we can teach you
         </p>
         <a href="#" class="button">Find out more</a>
@@ -66,27 +66,27 @@
     <div class="row">
       <div class="small-6 medium-3">
         <img src="./images/icon_group.png" alt="" />
-        <p class="lead">
+        <h4 class="lead">
           Group Training
-        </p>
+        </h4>
       </div>
       <div class="small-6 medium-3">
         <img src="./images/icon_individual.png" alt="" />
-        <p class="lead">
+        <h4 class="lead">
           Individual Sessions
-        </p>
+        </h4>
       </div>
       <div class="small-6 medium-3">
         <img src="./images/icon_speak.png" alt="" />
-        <p class="lead">
+        <h4 class="lead">
           Speak to be Understood
-        </p>
+        </h4>
       </div>
       <div class="small-6 medium-3">
         <img src="./images/icon_prepare.png" alt="" />
-        <p class="lead">
+        <h4 class="lead">
           Prepare to present
-        </p>
+        </h4>
       </div>
 
     </div>
@@ -119,85 +119,38 @@
 
   <section class="home-section home-testimonials">
     <div id="carouselContainer" class="row align-spaced" data-equalizer>
+
+      {% for t in testimonials %}
+
       <div class="small-12 medium-5 testimonial-slide">
         <div class="testimonial-body" data-equalizer-watch>
-          <p class="testimonial-quote-marks">
-            &ldquo;
-          </p>
           <p class="testimonial-text">
-            Peter Browne and his team at Intangible Communications have challenged our thinking and provided us with world class ideas, advice and content that's second to none.
+            <span class="testimonial-quote-marks">
+              &ldquo;
+            </span>
+            {{t.text}}
+            <span class="testimonial-quote-marks--bottom">
+              &rdquo;
+            </span>
           </p>
-          <p class="testimonial-quote-marks--bottom">
-            &rdquo;
-          </p>
         </div>
         <div class="row align-middle align-center">
           <div class="small-3 columns">
-            <img class="testimonial-profile-pic" src="images/testimonials/ivan.png" alt="Ivan Ritossa" />
+            <img class="testimonial-profile-pic" src="images/testimonials/{{t.image}}.png" alt="{{t.name}}" />
           </div>
           <div class="small-8 columns testimonial-meta">
             <p>
-              Ivan Ritossa, <br>
-              Executive Committee Member ‘07-’12
+              {{t.name}}, <br>
+              {{t.position}}
             </p>
-            <img class="testimonial-company" src="images/testimonials/barclays.png" alt="" />
+            <img class="testimonial-company" src="images/testimonials/{{t.logo}}.png" alt="{{t.company}}" />
           </div>
         </div>
-      </div><!--end testimonial -->
+      </div>{# end first testimonial #}
 
-      <div class="small-12 medium-5 testimonial-slide">
-        <div class="testimonial-body" data-equalizer-watch>
-        <p class="testimonial-quote-marks">
-          &ldquo;
-        </p>
-        <p class="testimonial-text">
-          Peter Browne worked extensively with me to substantiallyimprove my presentation skills for TV  and live audiences. This included crafting both content and  delivery to connect deeply with different  audiences. It was an invaluable experience which set  me up for all subsequent presentations.
-        </p>
-        <p class="testimonial-quote-marks--bottom">
-          &rdquo;
-        </p>
-        </div>
-        <div class="row align-middle align-center">
-          <div class="small-3 columns">
-            <img class="testimonial-profile-pic" src="images/testimonials/rosaline.png" alt="Rosaline" />
-          </div>
-          <div class="small-8 columns testimonial-meta">
-            <p>
-              Rosaline Kow Choo, <br>
-              Founder &amp; CEO
-            </p>
-            <img class="testimonial-company" src="images/testimonials/cxa.png" alt="CXA" />
-          </div>
-        </div>
-      </div><!--end testimonial -->
+      {% endfor %}
 
-      <div class="small-12 medium-5 testimonial-slide">
-        <div class="testimonial-body">
-        <p class="testimonial-quote-marks">
-          &ldquo;
-        </p>
-        <p class="testimonial-text">
-          Peter Browne worked extensively with me to substantiallyimprove my presentation skills for TV  and live audiences. This included crafting both content and  delivery to connect deeply with different  audiences. It was an invaluable experience which set  me up for all subsequent presentations.
-        </p>
-        <p class="testimonial-quote-marks--bottom">
-          &rdquo;
-        </p>
-        </div>
-        <div class="row align-middle align-center">
-          <div class="small-3 columns">
-            <img class="testimonial-profile-pic" src="images/testimonials/rosaline.png" alt="Rosaline" />
-          </div>
-          <div class="small-8 columns testimonial-meta">
-            <p>
-              Rosaline Kow Choo, <br>
-              Founder &amp; CEO
-            </p>
-            <img class="testimonial-company" src="images/testimonials/cxa.png" alt="CXA" />
-          </div>
-        </div>
-      </div><!--end testimonial -->
-    </div>
-
+    </div>{# end carouselContainer #}
   </section>
 
   <section class="home-section home-final-cta">

@@ -43,6 +43,7 @@
         vertical-align: middle
         padding-left: 0
         padding-right: 0
+        padding-bottom: 2px !important
         border-bottom: solid 2px transparent
 
     .button
@@ -51,8 +52,14 @@
     .active
       color: $--primary
       border-color: $--primary
+      &:hover
+        background-color: #fff
+
 
     .is-submenu-item
+      a
+        color: #fff
+        border: none
       border-bottom: solid 1px transparentize(#fff, 0.8)
       text-align: center
       text-transform: uppercase
@@ -98,8 +105,11 @@
     color: #fff
     border-color: #fff
     &:hover
-      background-color: #fff
-      color: #333
+      background-color: transparentize(#fff, 0.8)
+
+      border-color: transparentize(#fff, 0.8)
+      background-clip: padding-box
+
 
 
 .menu > li:not(.menu-text) > a

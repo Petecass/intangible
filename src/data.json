@@ -1,0 +1,58 @@
+{
+  "testimonials": [{
+    "name": "Ivan Ritossa",
+    "text": "Peter Browne and his team at Intangible Communications have challenged our thinking and provided us with world class ideas, advice and content that's second to none.",
+    "position": "Executive Committee Member 2007-2012",
+    "image": "ivan",
+    "company": "barclays",
+    "logo": "barclays"
+  },{
+    "name": "Rosaline Kow Choo",
+    "text": "Peter  Browne  worked  extensively  with  me  to  substantially  improve  my presentation skills for  TV  and  live  audiences. This  included  crafting  both  content  and  delivery to connect  deeply  with  different  audiences. It  was  an  invaluable  experience  which set  me up  for  all  subsequent  presentations.",
+    "position": "Founder &amp; CEO",
+    "image": "rosaline",
+    "company": "ConneXionsAsia",
+    "logo": "cxa"
+  },{
+    "name": "Brian Koh",
+    "text": "Peter engages well with the participants and provides a well –structured program. He also is personable and approachable. Furthermore, he gives personal attention and guidance to participants individually. We will certainly continue to have him conduct our future workshops.",
+    "position": "Director",
+    "image": "brian",
+    "company": "iCentre Brunei",
+    "logo": "icentre"
+  },{
+    "name": "Wong Meng Weng",
+    "text": "While many factors go into the success or failure of a startup, the ability of foreign teams to present with confidence and clarity is definitely a major contributor to their ability to secure follow-up meetings with investors after Demo Day, and that ability is due to Peter Browne.",
+    "position": "Social Engineer",
+    "image": "wong",
+    "company": "JFDI.Asia",
+    "logo": "jfdi"
+  },{
+    "name": "Krishanthan Surendran",
+    "text": "He does a fantastic job of being positive and encouraging yet very objective and critical. Being a mirror (reality check) is crucial as a pitch coach, but delivering this without killing the spirit requires a lot of tactfulness which only comes with experience. Highly recommend him for anyone who is the frontline of a company!",
+    "position": "CEO",
+    "image": "krishanthan",
+    "company": "Klinify",
+    "logo": "klinify"
+  },{
+    "name": "Peter Warne",
+    "text": "He could very quickly come to understand the nuances of a particular corporate culture, corporate politics and personalities and develop creative approaches to dealing with these. He could examine problems and issues from an outsider’s perspective and propose solutions which often eluded the insiders.",
+    "position": "Chairman",
+    "image": "peter",
+    "company": "Macquarie Bank",
+    "logo": "macquarie"
+  },{
+    "name": "Roger Egan III",
+    "text": "His advice on content, structure and how to present was superb. He significantly enhanced my presentation and he was an excellent sounding board on how best to articulate some very complex ideas that I was presenting. I’ll certainly be using his services to prepare for all major speaking engagements in the future.",
+    "position": "CEO",
+    "image": "roger",
+    "company": "Redmart",
+    "logo": "redmart"
+  },{
+    "name": "Vaishnavi RajendraKumar",
+    "text": "All of us who attended the training feel that, our presentation skills are very professional comparatively, be it with the client meetings or internal meetings. We were extremely happy with the outcome and we are now engaging Peter Browne’s services to our extended team on both Presentations and corporate email communications training.",
+    "image": "vaishnavi",
+    "company": "Verticurl",
+    "logo": "verticurl"
+  }]
+}

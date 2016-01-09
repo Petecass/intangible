@@ -94,7 +94,7 @@ $block-grid-max: 8;
 // 4. Base Typography
 // ------------------
 
-$header-font-family: $body-font-family;
+$header-font-family: $--font-heading;
 $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
@@ -298,7 +298,7 @@ $dropdown-sizes: (
 
 $dropdownmenu-arrows: false;
 $dropdownmenu-min-width: 150px;
-$dropdownmenu-background: transparentize($--primary, 0.2) ;
+$dropdownmenu-background: transparentize($--dropdown-menu-bg, 0.4) ;
 $dropdownmenu-border: none;
 
 // 18. Flex Video
