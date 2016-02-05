@@ -1,6 +1,6 @@
-#47 East main repo.
+#Intangible Main Site
 
-install node npm gulp and bower.
+install node, npm, gulp, and bower.
 
 run `npm install`
 `bower install`
